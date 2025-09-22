@@ -19,7 +19,7 @@ class Solution {
       for (int j = 0; j < n; ++j)
         if (p[j] == '*') {
           // The minimum index of '*' is 1.
-          const bool noRepeat = dp[i + 1][j - 1];
+          const bool noRepeat = dp[i + 1][j -  1];
           const bool doRepeat = isMatch(i, j - 1) && dp[i][j + 1];
           dp[i + 1][j + 1] = noRepeat || doRepeat;
         } else if (isMatch(i, j)) {
