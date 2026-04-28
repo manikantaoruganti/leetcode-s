@@ -9,7 +9,7 @@ for (int i = 2; i <= n; ++i) {
     if (i % 2 == 0)
         nums[i] = nums[i / 2];
     else
-        nums[i] = nums[i / 2] + nums[i / 2 + 1];
+nums[i] = nums[i / 2] + nums[i / 2 + 1];
     maxVal = max(maxVal, nums[i]);
 }
 return maxVal;
