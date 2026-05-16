@@ -1,12 +1,5 @@
-/*impl Solution {
-    pub fn max_product(nums: Vec<i32>, k: i32, limit: i32) -> i32 {
-        
-    }
-}*/
+
   use std::collections::{HashMap, HashSet};
-
-//pub struct Solution;
-
 impl Solution {
     pub fn max_product(nums: Vec<i32>, k: i32, limit: i32) -> i32 {
         let inf = limit + 1;
@@ -48,8 +41,6 @@ impl Solution {
 
             dp = new_dp;
         }
-
-        // Extract the maximum valid product for alternating sum == k
         let mut best = -1;
         for ((_, prod), alts) in dp.iter() {
             if *prod <= limit && alts.contains(&k) {
