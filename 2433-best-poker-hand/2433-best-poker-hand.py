@@ -8,4 +8,4 @@ class Solution:
         if max(count) == 2:
             return "Pair"
         return "High Card"
-        
+        #return According to coung
